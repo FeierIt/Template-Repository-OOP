@@ -24,4 +24,15 @@
       <None Remove="bin\**" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="Spectre.Console" Version="0.48.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\OOP-ICT.First\OOP-ICT.First.csproj" />
+      <ProjectReference Include="..\OOP-ICT.Fourth\OOP-ICT.Fourth.csproj" />
+      <ProjectReference Include="..\OOP-ICT.Second\OOP-ICT.Second.csproj" />
+    </ItemGroup>
+
 </Project>

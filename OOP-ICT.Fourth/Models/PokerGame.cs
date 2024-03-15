@@ -59,7 +59,7 @@ public class PokerGame
     }
 
 
-    public void CompareHands()
+    public List<Player> CompareHands()
     {
         List<Player> losers = new List<Player>();
         foreach (var player in players)
@@ -88,6 +88,7 @@ public class PokerGame
             }
         }
         DeductLosses(losers);
+        return losers;
     }
 
     private void DeductLosses(List<Player> losers)

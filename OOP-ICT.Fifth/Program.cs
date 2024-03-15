@@ -1,3 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using OOP_ICT.Fifth.Services;
+using OOP_ICT.Fifth.UI;
 
-Console.WriteLine("Hello, World!");
+class Program
+{
+    static void Main(string[] args)
+    {
+        var pokerGameManager = new PokerGameManager();
+        var consoleInterface = new ConsoleInterface(pokerGameManager);
+
+        pokerGameManager.LoadDataFromJson();
+
+        consoleInterface.Start();
+
+        pokerGameManager.SaveDataToJson();
+    }
+}
