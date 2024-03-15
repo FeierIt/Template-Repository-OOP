@@ -28,7 +28,8 @@ public class CardDeck
     {
         int n = cards.Count;
         int half = n / 2;
-        for (int j = 0; j < 7; j++)
+        var rnd = new Random();
+        for (int j = 0; j < rnd.Next(1, 100); j++)
         {
             List<Card> shuffledDeck = new List<Card>();
 
@@ -39,7 +40,6 @@ public class CardDeck
             }
 
             cards = shuffledDeck;
-            Console.WriteLine(cards[5]);
         }
     }
 
